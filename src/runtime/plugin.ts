@@ -1,5 +1,14 @@
-import { defineNuxtPlugin } from "#app";
+import { defineNuxtPlugin, useLoadingIndicator } from "#imports";
 
 export default defineNuxtPlugin((nuxtApp) => {
-  console.log("Plugin injected by my-module!");
+  const { start, finish } = useLoadingIndicator();
+
+  return {
+    provide: {
+      loading: {
+        start,
+        finish,
+      },
+    },
+  };
 });
