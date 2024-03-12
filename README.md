@@ -14,44 +14,15 @@ Find and replace all on all files (CMD+SHIFT+F):
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-My new Nuxt module for doing amazing things.
+This Module supports migration to Nuxt 3.
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-  <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/my-module?file=playground%2Fapp.vue) -->
-  <!-- - [📖 &nbsp;Documentation](https://example.com) -->
+In Nuxt 2, there is a useful loading utility `this.$nuxt.$loading`.
 
-## Features
+In Nuxt 3, however, this utility does not exist.
 
-<!-- Highlight some of the features your module provide here -->
+Instead, in Nuxt 3, components such as `<NuxtLoadingIndicator>` and composables like `useLoadingIndicator` are provided."
 
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
-
-## Quick Setup
-
-1. Add `my-module` dependency to your project
-
-```bash
-# Using pnpm
-pnpm add -D my-module
-
-# Using yarn
-yarn add --dev my-module
-
-# Using npm
-npm install --save-dev my-module
-```
-
-2. Add `my-module` to the `modules` section of `nuxt.config.ts`
-
-```js
-export default defineNuxtConfig({
-  modules: ["my-module"],
-});
-```
-
-That's it! You can now use My Module in your Nuxt app ✨
+## Usage
 
 ## Development
 
