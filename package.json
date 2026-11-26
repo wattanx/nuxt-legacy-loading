@@ -28,7 +28,7 @@
     "prepare": "nuxi prepare"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.10.3"
+    "@nuxt/kit": "^4.7.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.25",
